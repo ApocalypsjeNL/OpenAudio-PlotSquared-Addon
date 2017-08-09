@@ -2,7 +2,12 @@
 This is an addon that let's OpenAudioMC supports PlotSquared
 
 # Download
-You can download the latest release [here](https://github.com/ApocalypsjeNL/OpenAudio-PlotSquared-Addon/releases/latest)
+
+OpenAudioMC and PlotSquared needs to be installed on your server. You can download them here: <br />
+[OpenAudioMC](https://www.spigotmc.org/resources/openaudiomc-open-source-audio-client.30691/) <br />
+[PlotSquared](https://www.spigotmc.org/resources/plotsquared.1177/) <br />
+<br />
+You can download the latest release of this addon [here](https://github.com/ApocalypsjeNL/OpenAudio-PlotSquared-Addon/releases/latest)
 
 # Commands
 
