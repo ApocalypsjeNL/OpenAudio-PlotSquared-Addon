@@ -1,5 +1,5 @@
 # OpenAudio-PlotSquared-Addon
-This is an addon that let OpenAudioMC supports PlotSquared-Addon
+This is an addon that let's OpenAudioMC supports PlotSquared
 
 # Commands
 
