@@ -1,6 +1,9 @@
 # OpenAudio-PlotSquared-Addon
 This is an addon that let's OpenAudioMC supports PlotSquared
 
+# Download
+You can download the latest release [here](https://github.com/ApocalypsjeNL/OpenAudio-PlotSquared-Addon/releases/latest)
+
 # Commands
 
 /music <br />
