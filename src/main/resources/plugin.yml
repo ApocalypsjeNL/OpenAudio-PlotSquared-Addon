@@ -1,0 +1,9 @@
+name: ${name}
+main: com.apocalypsjenl.openaudiomc.addon.plotsquared.PlotSquaredHook
+version: ${version}
+author: ${author}
+
+commands:
+  music:
+    desciption: Manage the music on your plot
+    usage: /music
