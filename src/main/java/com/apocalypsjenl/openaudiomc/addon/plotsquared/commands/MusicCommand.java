@@ -91,7 +91,7 @@ public class MusicCommand implements CommandExecutor
                 {
                     player.sendMessage( ChatColor.GREEN + "Music help:" );
                     player.sendMessage( ChatColor.GREEN + "/music add <url> " + ChatColor.GOLD +
-                            "- Add music to your plot! Currently you can add youtube, soundcloud and mp3 links" );
+                            "- Add music to your plot! Currently you can add soundcloud and mp3 links" );
                     player.sendMessage( ChatColor.GREEN + "/music remove    " + ChatColor.GOLD +
                             "- Removes the music of your plot" );
                     player.sendMessage( ChatColor.GREEN + "/music get         " + ChatColor.GOLD +
