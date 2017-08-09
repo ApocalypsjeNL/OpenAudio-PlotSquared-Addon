@@ -20,5 +20,5 @@ __Get the url of which song is playing at the moment on the plot you're standing
 /music remove <br />
 __Removes the music from the plot if you're the plot owner__
 
-/music add <url> <br />
+/music add [url] <br />
 __Add music to the plot you're currently standing on__
