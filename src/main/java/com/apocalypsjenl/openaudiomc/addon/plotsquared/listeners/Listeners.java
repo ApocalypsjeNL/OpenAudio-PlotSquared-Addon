@@ -24,7 +24,7 @@ public class Listeners implements Listener
         if ( plot.getFlags( ).containsKey( FlagManager.getFlag( "musicLink" ) ) )
         {
             Command.stop( event.getPlayer( ).getName( ) );
-            Command.playNormalSound( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+            Command.playLoop( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
         }
     }
 
@@ -54,7 +54,7 @@ public class Listeners implements Listener
             for ( PlotPlayer plotPlayer : event.getPlot( ).getPlayersInPlot( ) )
             {
                 Command.stop( plotPlayer.getName( ) );
-                Command.playNormalSound( plotPlayer.getName( ), ( String ) event.getPlot( ).getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+                Command.playLoop( plotPlayer.getName( ), ( String ) event.getPlot( ).getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
             }
         }
     }
@@ -68,7 +68,7 @@ public class Listeners implements Listener
             if ( plot.getFlags( ).containsKey( FlagManager.getFlag( "musicLink" ) ) )
             {
                 Command.stop( event.getPlayer( ).getName( ) );
-                Command.playNormalSound( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+                Command.playLoop( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
             }
         }
     }
