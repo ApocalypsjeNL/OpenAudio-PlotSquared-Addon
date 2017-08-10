@@ -1,5 +1,6 @@
 # OpenAudio-PlotSquared-Addon
-This is an addon that let's OpenAudioMC supports PlotSquared
+This is an addon that let's OpenAudioMC supports PlotSquared <br />
+__Spigot page:__ [link](https://www.spigotmc.org/resources/openaudiomc-addon-plotsquared.45383/)
 
 # Download
 
