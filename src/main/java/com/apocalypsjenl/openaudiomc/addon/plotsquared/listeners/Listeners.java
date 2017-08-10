@@ -8,8 +8,10 @@ import com.plotsquared.bukkit.events.PlayerEnterPlotEvent;
 import com.plotsquared.bukkit.events.PlayerLeavePlotEvent;
 import com.plotsquared.bukkit.events.PlotFlagAddEvent;
 import com.plotsquared.bukkit.events.PlotFlagRemoveEvent;
+import me.mindgamesnl.openaudiomc.publicApi.OpenAudioApi;
 import me.mindgamesnl.openaudiomc.publicApi.WebConnectEvent;
 import net.openaudiomc.actions.Command;
+import net.openaudiomc.core.Main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
@@ -25,6 +27,12 @@ public class Listeners implements Listener
         {
             Command.stop( event.getPlayer( ).getName( ) );
             Command.playLoop( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+
+            if ( !OpenAudioApi.isConnected( event.getPlayer() ) )
+            {
+                String message = "[\"\",{\"text\":\"Hey, this plot has sound on it. If you want to hear it click here!\",\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/connect\"}}]";
+                Main.get( ).getReflection( ).sendChatPacket( event.getPlayer( ), message );
+            }
         }
     }
 
