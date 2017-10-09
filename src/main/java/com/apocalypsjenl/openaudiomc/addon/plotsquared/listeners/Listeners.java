@@ -25,8 +25,8 @@ public class Listeners implements Listener
 
         if ( plot.getFlags( ).containsKey( FlagManager.getFlag( "musicLink" ) ) )
         {
-            Command.stop( event.getPlayer( ).getName( ) );
-            Command.playLoop( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+            Command.stopRegion( event.getPlayer( ).getName( ) );
+            Command.playRegion( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
 
             if ( !OpenAudioApi.isConnected( event.getPlayer() ) )
             {
@@ -39,7 +39,7 @@ public class Listeners implements Listener
     @EventHandler
     public void onPlayerLeavePlot ( PlayerLeavePlotEvent event )
     {
-        Command.stop( event.getPlayer( ).getName( ) );
+        Command.stopRegion( event.getPlayer( ).getName( ) );
     }
 
     @EventHandler
@@ -49,7 +49,7 @@ public class Listeners implements Listener
         {
             for ( PlotPlayer plotPlayer : event.getPlot( ).getPlayersInPlot( ) )
             {
-                Command.stop( plotPlayer.getName( ) );
+                Command.stopRegion( plotPlayer.getName( ) );
             }
         }
     }
@@ -61,8 +61,8 @@ public class Listeners implements Listener
         {
             for ( PlotPlayer plotPlayer : event.getPlot( ).getPlayersInPlot( ) )
             {
-                Command.stop( plotPlayer.getName( ) );
-                Command.playLoop( plotPlayer.getName( ), ( String ) event.getPlot( ).getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+                Command.stopRegion( plotPlayer.getName( ) );
+                Command.playRegion( plotPlayer.getName( ), ( String ) event.getPlot( ).getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
             }
         }
     }
@@ -75,8 +75,8 @@ public class Listeners implements Listener
             Plot plot = new PlotAPI( ).getPlot( event.getPlayer( ).getLocation( ) );
             if ( plot.getFlags( ).containsKey( FlagManager.getFlag( "musicLink" ) ) )
             {
-                Command.stop( event.getPlayer( ).getName( ) );
-                Command.playLoop( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
+                Command.stopRegion( event.getPlayer( ).getName( ) );
+                Command.playRegion( event.getPlayer( ).getName( ), ( String ) plot.getFlags( ).get( FlagManager.getFlag( "musicLink" ) ) );
             }
         }
     }
