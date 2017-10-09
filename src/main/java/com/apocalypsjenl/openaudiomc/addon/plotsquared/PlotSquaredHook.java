@@ -5,11 +5,10 @@ import com.apocalypsjenl.openaudiomc.addon.plotsquared.listeners.Listeners;
 import com.intellectualcrafters.plot.api.PlotAPI;
 import com.intellectualcrafters.plot.flag.Flag;
 import com.intellectualcrafters.plot.flag.StringFlag;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class PlotSquaredHook extends JavaPlugin implements Listener
+public class PlotSquaredHook extends JavaPlugin
 {
 
     @Override
@@ -22,12 +21,14 @@ public class PlotSquaredHook extends JavaPlugin implements Listener
         {
             getLogger( ).warning( "PlotSquared not found! Can't work without it!" );
             getServer( ).getPluginManager( ).disablePlugin( this );
+            return;
         }
 
         if ( !( openAudioMC != null && openAudioMC.isEnabled( ) ) )
         {
             getLogger( ).warning( "OpenAudioMC not found! Can't work without it!" );
             getServer( ).getPluginManager( ).disablePlugin( this );
+            return;
         }
 
         Flag musicLinkFlag = new StringFlag( "musicLink" )

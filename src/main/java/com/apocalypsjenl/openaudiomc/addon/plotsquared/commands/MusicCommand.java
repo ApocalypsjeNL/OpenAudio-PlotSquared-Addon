@@ -29,6 +29,7 @@ public class MusicCommand implements CommandExecutor
                             Plot plot = plotAPI.getPlot( player );
                             if ( plot.getOwners( ).contains( player.getUniqueId( ) ) || player.hasPermission( "openaudiomc.plotsquared.bypass" ) || player.isOp( ) )
                             {
+                                plot.removeFlag( FlagManager.getFlag("musicLink") );
                                 plot.setFlag( FlagManager.getFlag( "musicLink" ), args[ 1 ] );
                                 player.sendMessage( ChatColor.GREEN + "You've set the music for this plot to " +
                                         ChatColor.GOLD + args[ 1 ] );
@@ -91,11 +92,12 @@ public class MusicCommand implements CommandExecutor
                 {
                     player.sendMessage( ChatColor.GREEN + "Music help:" );
                     player.sendMessage( ChatColor.GREEN + "/music add <url> " + ChatColor.GOLD +
-                            "- Add music to your plot! Currently you can add soundcloud and mp3 links" );
+                            "- Add music to your plot! Currently you can add SoundCloud, YouYube and MP3 links." );
                     player.sendMessage( ChatColor.GREEN + "/music remove    " + ChatColor.GOLD +
                             "- Removes the music of your plot" );
-                    player.sendMessage( ChatColor.GREEN + "/music get         " + ChatColor.GOLD +
+                    player.sendMessage( ChatColor.GREEN + "/music get       " + ChatColor.GOLD +
                             "- Show which music url is playing at the moment on the plot you're standing at" );
+                    player.sendMessage( ChatColor.RED + "Please note, YouTube is supported in OpenAudioMc 3.0 or higher and WebClient 1.7 or higher. For more info please join our discord server https://discord.gg/J29TbA7" );
                     return true;
                 }
             }

@@ -1,7 +1,7 @@
 name: ${name}
 main: com.apocalypsjenl.openaudiomc.addon.plotsquared.PlotSquaredHook
 version: ${version}
-author: ${author}
+author: ${author}, together with the contributor(s) ${contributors}
 depend: [PlotSquared, OpenAudioMc]
 
 commands:

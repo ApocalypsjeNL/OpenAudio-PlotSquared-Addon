@@ -6,11 +6,12 @@
 
     <groupId>com.apocalypsjenl</groupId>
     <artifactId>OpenAudioMC_PlotSquared</artifactId>
-    <version>1.0.1.2</version>
+    <version>1.0.2</version>
     <name>OpenAudioMC_PlotSquared</name>
 
     <properties>
         <author>ApocalypsjeNL</author>
+        <contributors>Legoman99573</contributors>
     </properties>
 
     <repositories>
@@ -18,14 +19,11 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
-        <repository>
-            <id>local-repo</id>
-            <url>file:///C:/Users/Niek/.m2/repository/</url>
-        </repository>
     </repositories>
     
     <dependencies>
         <!--PlotSquared API-->
+        <!--Local repository-->
         <dependency>
             <groupId>com.plotsquared</groupId>
             <artifactId>plotsquared</artifactId>
@@ -45,10 +43,12 @@
             <version>1.12-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <!--OpenAudioMC API-->
+        <!--Local repository-->
         <dependency>
             <groupId>net.openaudiomc</groupId>
-            <artifactId>OpenAudioMc</artifactId>
-            <version>2.7-pre3</version>
+            <artifactId>OpenAudioMC</artifactId>
+            <version>3.0-pre</version>
         </dependency>
     </dependencies>
     
