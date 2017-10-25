@@ -23,3 +23,8 @@ __Removes the music from the plot if you're the plot owner__
 
 /music add [url] <br />
 __Add music to the plot you're currently standing on__
+
+# Support
+
+If you need more help, feel free to join our discord server
+[Discord](https://discord.gg/J29TbA7)
