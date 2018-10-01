@@ -2,6 +2,8 @@
 This is an addon that let's OpenAudioMC supports PlotSquared <br />
 __Spigot page:__ [link](https://www.spigotmc.org/resources/openaudiomc-addon-plotsquared.45383/)
 
+# Note, this plugin is for OpenAudioMc 3.6
+
 # Download
 
 OpenAudioMC and PlotSquared needs to be installed on your server. You can download them here: <br />
